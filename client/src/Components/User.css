@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+/* Your existing CSS code */
+.parisienne-regular {
+    font-family: "Parisienne", cursive;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.User {
+    height: 100vh;
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yODEtYWRqLTA2Ny1qb2I1OTguanBn.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.cards {
+    padding-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-container {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.button-container .btn {
+    width: 100px;
+    background-color: #D98586;
+}
+
+.Card {
+    font-family: "Parisienne", cursive;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    padding: 4px;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    perspective: 1000px;
+}
+
+.CardFront, .CardBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 15px 10px 30px rgba(0, 0, 0, 0.486);
+    transition: transform 0.6s;
+}
+
+.CardBack {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.Card.flipped .CardFront {
+    transform: rotateY(180deg);
+}
+
+.Card.flipped .CardBack {
+    transform: rotateY(0deg);
+}
+
+.btn {
+    padding: 0;
+    width: 2rem;
+    height: 2.5rem;
+}
+
+.admin-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.pagination-container{
+    padding-top: 3%;
+    margin: auto;
+    text-align: center;
+}
+.pagination-container .btn{
+    background-color: #D98586;
+}
+.add-card-container {
+    margin-top:5px ;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .buttons2 {
+    display: flex;
+    gap: 5px;
+    justify-content:center;
+  }
+  .buttons2 .btn{
+    margin: 2px;
+    background-color: #D98586;
+    width: auto;
+    padding: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
